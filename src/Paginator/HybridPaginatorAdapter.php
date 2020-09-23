@@ -29,7 +29,7 @@ class HybridPaginatorAdapter extends RawPaginatorAdapter
      */
     public function __construct(SearchableInterface $searchable, Query $query, array $options, ElasticaToModelTransformerInterface $transformer)
     {
-        parent::__construct($searchable, $query);
+        parent::__construct($searchable, $query, $options);
 
         $this->transformer = $transformer;
     }
